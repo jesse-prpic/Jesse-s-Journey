@@ -1,0 +1,91 @@
+/* Color Pallete for my website chosen from Coolor*/
+* {
+    --Caribeean-Current:#28666E;
+    --Sage: rgb(181, 182, 130);
+    --Peach-Yellow: rgb(254, 220, 151);
+    --Light-Sky-Blue: #90C2E7;
+    --Rose-Taupe: #8B635C;
+    --Silver: #bdb4b2;
+    --Jet:#342F2E;
+}
+body {
+    background-image: linear-gradient(rgba(254, 220, 151, 0), rgba(254,220,151, 1));
+    font-family: Arial, Helvetica, sans-serif;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+header{
+    color: var(--Rose-Taupe);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.logo {
+    height: 150px;
+    width: 150px;
+    background-image: linear-gradient(rgba(254,220,151, 0), rgba(254, 220, 151, 1));
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border: solid 5px;
+    border-color: var(--Peach-Yellow);
+    border-radius: 50%;
+
+}
+.logo p{
+    background-color: linear-gradient(rgba(254,220,151, 0), rgba(254, 220, 151, 1));
+    color: var(--Jet);
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 30%;
+
+}
+nav a{
+    text-decoration: none;
+    background-color: var(--Rose-Taupe);
+    color:var(--Peach-Yellow);
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right:0.5rem;
+    border-radius: 15%;
+}
+
+nav a:hover{
+    background-color: var(--Peach-Yellow);
+    color: var(--Rose-Taupe);
+
+}
+.Destinations{
+    margin-top: 175dvw;
+    background-color:var(--Light-Sky-Blue);
+    padding: 1rem;
+    border-radius: 5%;
+}
+.Destinations img{
+    width: 75dvw;
+}
+
+@media screen and (min-width: 600px) {
+    main{
+        display: flex;
+        flex: row;
+        flex-wrap: wrap;
+        gap:20px;
+        justify-content: space-around;
+    
+}
+.Destinations{
+    margin-top: 5dvw;
+}
+.Destinations img{
+    width: 350px;
+    height: 350px;
+    border-radius: 1rem;
+}
+}
