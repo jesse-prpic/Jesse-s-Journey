@@ -1,9 +1,9 @@
 /* Color Pallete for my website chosen from Coolor*/
 * {
-  --Caribeean-Current: #28666e;
+  --Caribeean-Current: rgb(40, 102, 110);
   --Sage: rgb(181, 182, 130);
   --Peach-Yellow: rgb(254, 220, 151);
-  --Light-Sky-Blue: #90c2e7;
+  --Light-Sky-Blue: rgb(144, 194, 231);
   --Rose-Taupe: #8b635c;
   --Silver: #bdb4b2;
   --Jet: #342f2e;;
@@ -25,7 +25,7 @@ header {
   display: flex;
   flex-direction: column;
   text-align: center;
-  align-items: center;
+  align-items:center;
 }
 header a{
     text-decoration: none;
@@ -34,17 +34,16 @@ header a{
 .logo {
   height: 150px;
   width: 150px;
-  background-image: linear-gradient(
-    rgba(254, 220, 151, 0),
-    rgba(254, 220, 151, 1)
-  );
+  background-image: linear-gradient(45deg, rgb(40, 102, 100), rgb(144, 194, 231));
   display: flex;
   justify-content: center;
   text-align: center;
   align-items: center;
   border: solid 5px;
-  border-color: var(--Peach-Yellow);
+  border-color:var(--Caribeean-Current);
   border-radius: 50%;
+  margin-top: 30%;
+  ;
 
 }
 
@@ -59,21 +58,31 @@ header a{
   border-radius: 30%;
  
 }
+nav {  
+  overflow: hidden;
+  background-color:var(--Rose-Taupe);
+  position: fixed;
+  top:0%;
+  width: 100%;
+
+}
 
 nav a {
   text-decoration: none;
   background-color: var(--Rose-Taupe);
   color: var(--Peach-Yellow);
   padding: 0.5rem;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-  border-radius: 15%;
+  display: block;
+  float:inline-start;
+  margin-bottom: 20;
+
 }
 
 nav a:hover {
   background-color: var(--Peach-Yellow);
   color: var(--Rose-Taupe);
 }
+
 .Destinations {
   margin-top: 175dvw;
   background-color: var(--Light-Sky-Blue);
