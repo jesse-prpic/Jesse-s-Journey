@@ -111,6 +111,7 @@ width:75dvw;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: space-around;
+    align-items: center;
   }
   .Destinations {
     margin-top: 5dvw;
