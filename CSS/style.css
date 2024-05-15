@@ -26,13 +26,26 @@ header {
   flex-direction: column;
   text-align: center;
   align-items:center;
+  gap: 7rem;
 }
 header a{
     text-decoration: none;
 }
 
-.logo {
-  font-style: oblique;
+.logo img {
+  background-image: url(../index.html);
+  display: block;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 5rem;
+  position: absolute;
+  top: -100px;
+  right: 80px;
+ 
+  z-index: 1;
+  
+  /* font-style: oblique;
   font-weight: bolder;
   height: 150px;
   width: 150px;
@@ -44,20 +57,18 @@ header a{
   border: solid 5px;
   border-color: rgba(40, 102, 100, 0.4);
   border-radius: 50%;
-  margin-top: 30%;
-  ;
-
+  margin-top: 30%; */
 }
 
 .logo p {
-  background-color: linear-gradient(
+  /* background-color: linear-gradient(
     rgba(254, 220, 151, 0),
     rgba(254, 220, 151, 1)
   );
   color: var(--Jet);
   font-size: 1.5rem;
   padding: 1.5rem;
-  border-radius: 30%;
+  border-radius: 30%; */
  
 }
 nav {  
@@ -74,10 +85,9 @@ nav a {
   background-color: var(--Jet);
   color: var(--Peach-Yellow);
   padding: .75rem;
-  display:block;
+  display:flex;
   float: left;
-  margin-bottom: 20;
-
+  text-indent: 100px;
 }
 
 nav a:hover {
@@ -86,7 +96,7 @@ nav a:hover {
 }
 .Destinations {
   margin-top: 175dvw;
-  background-color: rgba(144, 194, 231,0.6);
+  background-color: rgba(144, 194, 231,0.4);
   padding: 1rem;
   border-radius: 5%;
 }
@@ -104,7 +114,7 @@ width:75dvw;
 }
 
 
-@media screen and (min-width: 600px) {
+@media screen and (width > 600px) {
   main {
     display: flex;
     flex: row;
@@ -113,6 +123,9 @@ width:75dvw;
     justify-content: space-around;
     align-items: center;
   }
+
+  }
+
   .Destinations {
     margin-top: 5dvw;
   }
@@ -129,4 +142,9 @@ width:75dvw;
     height: 350px;
     border-radius: 1rem;
 }
+
+@media screen and (max-width:600) {
+
+  
 }
+
